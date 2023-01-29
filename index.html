@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="src/styles.css"> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form id="search-form">
+            <div id="row-header" class="row">
+                <div class="col-6">
+          <input
+          id="input-search"
+          type="text"
+          placeholder="Type a city.."
+          autofocus="on"
+          autocomplete="off"
+          class="form-control"
+          />
+        </div>
+        <div class="col-3">
+          <input
+            type="submit"
+            value="Search"
+            class="form-control btn btn-primary shadow-sm"
+            id="search-button"
+          />
+        </div>
+        <div class="col-3">
+          <button
+            class="btn btn-success"
+            id="location-button">Current
+          </button>
+        </div>
+      </div>
+        </form>
+        <div class="header">
+          <span id="my-city" class="my-city">Lisbon, Portugal</span>
+          <span class="now-temperature">☀️ 18</span>
+          <span class="units">
+            <a href="#" id="degreeC">°C</a>
+            |
+            <a href="#" id="degreeF">°F</a>
+          </span>
+        </div>
+        <p> <span class="time-now" id="time-now" "></span><br>
+        <span class="real-feel">
+          Humidity <span class="percentage">75% </span> Wind:
+          <span class="wind">2.50Km/h </span>
+        </p>
+
+        <div class="row" id="row-week">
+          <div class="col-2">Fri</div>
+
+          <div class="col-2">Sat</div>
+
+          <div class="col-2">Sun</div>
+
+          <div class="col-2">Mon</div>
+
+          <div class="col-2">Tue</div>
+        </div>
+        <div class="row" id="emojis">
+          <div class="col-2">🌤️</div>
+
+          <div class="col-2">☀️</div>
+
+          <div class="col-2">☀️</div>
+
+          <div class="col-2">🌤️</div>
+
+          <div class="col-2">☀️</div>
+        </div>
+        <div class="row" id="temperatures">
+          <div class="col-2">
+            <span class="maximum"><strong>18˚C</strong></span>
+            20˚C
+          </div>
+
+          <div class="col-2">
+            <span class="maximum"><strong>22˚C</strong></span>
+            20˚C
+          </div>
+          <div class="col-2">
+            <span class="maximum"><strong>10˚C</strong></span>
+            15˚C
+          </div>
+          <div class="col-2">
+            <span class="maximum"><strong>20˚C</strong></span>
+            16˚C
+          </div>
+          <div class="col-2">
+            <span class="maximum"><strong>20˚C</strong></span>
+            18˚C
+          </div>
+        </div>
+        <footer>
+          <p class="coded-by">
+            Coded by
+            <a
+              href="https://www.shecodes.io/graduates/65206-carmen-navalhas"
+              target="_blank"
+              >Carmen Navalhas</a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
